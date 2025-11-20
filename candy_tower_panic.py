@@ -553,7 +553,6 @@ class CandyTowerGame:
             surface.blit(font.render(line, True, WHITE), (x0, y))
             y += 22
 
-        # Game state banner / restart hints
         if self.game_state == STATE_WON:
             msg = TEXTS["WIN"]; color = GREEN
         elif self.game_state == STATE_LOST:
